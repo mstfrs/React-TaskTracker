@@ -1,6 +1,6 @@
-import React from "react";
+// import React from 'react'
 
-const Button = ({ color, text, handleClickProp }) => {
+const Button = ({ color, text, toggleShow }) => {
   //   const handleClick = () => {
   //     console.log("Click with handleClick");
   //   };
@@ -8,8 +8,8 @@ const Button = ({ color, text, handleClickProp }) => {
     <div>
       <button
         className="btn"
-        onClick={handleClickProp}
         style={{ backgroundColor: color }}
+        onClick={toggleShow}
       >
         {text}
       </button>
